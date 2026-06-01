@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn about Titan Marketing Agency — a Google Ads management agency for local service businesses based in Reisterstown, MD. Founded by Luke Clahar.">
+<title>About | Titan Marketing Agency</title>
+<link rel="canonical" href="https://titanadgrouphq.com/about.html">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Arial', sans-serif; color: #111; background: #fff; }
+  a { color: inherit; text-decoration: none; }
+
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 2rem; border-bottom: 1px solid #f0f0f0;
+    position: sticky; top: 0; background: #fff; z-index: 100;
+  }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-icon { width: 40px; height: 40px; background: #111; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-name { font-size: 1rem; font-weight: 900; color: #111; font-family: 'Arial Black', sans-serif; letter-spacing: -0.3px; }
+  .logo-sub { font-size: 0.65rem; font-weight: 700; color: #22C55E; letter-spacing: 2px; text-transform: uppercase; }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+  .nav-links a { font-size: 0.875rem; font-weight: 600; color: #555; transition: color 0.2s; }
+  .nav-links a:hover { color: #111; }
+  .nav-cta { background: #111; color: #fff; padding: 0.55rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 700; transition: background 0.2s; border: 2px solid #111; }
+  .nav-cta:hover { background: #22C55E; border-color: #22C55E; color: #111; }
+
+  .page-hero { max-width: 800px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
+  .section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; color: #22C55E; text-transform: uppercase; margin-bottom: 0.6rem; }
+  .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -1px; color: #111; margin-bottom: 1.25rem; font-family: 'Arial Black', sans-serif; }
+  .page-hero h1 span { color: #22C55E; }
+  .page-hero p { font-size: 1.1rem; color: #555; line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+  .section { padding: 4rem 2rem; max-width: 1040px; margin: 0 auto; }
+  .section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: #111; letter-spacing: -0.5px; margin-bottom: 1rem; font-family: 'Arial Black', sans-serif; }
+  .section p { font-size: 0.975rem; color: #555; line-height: 1.8; margin-bottom: 1rem; max-width: 720px; }
+
+  .stats-bar { background: #111; padding: 2rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 1.75rem; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
+  .stat-label { font-size: 0.8rem; color: #aaa; margin-top: 0.25rem; }
+
+  .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+  .value-card { border: 1.5px solid #e8e8e8; border-radius: 12px; padding: 1.5rem; transition: border-color 0.2s; }
+  .value-card:hover { border-color: #22C55E; }
+  .value-num { font-size: 2rem; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; margin-bottom: 0.5rem; }
+  .value-card h3 { font-size: 0.95rem; font-weight: 700; color: #111; margin-bottom: 0.4rem; }
+  .value-card p { font-size: 0.875rem; color: #666; line-height: 1.6; margin: 0; }
+
+  .highlight-box { background: #f8f8f8; border-left: 3px solid #22C55E; padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+  .highlight-box p { font-size: 1rem; color: #333; font-weight: 600; line-height: 1.6; margin: 0; }
+
+  .cta-section { background: #111; border-radius: 16px; padding: 4rem 2rem; text-align: center; max-width: 1040px; margin: 0 auto 5rem; }
+  .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: #fff; margin-bottom: 0.75rem; font-family: 'Arial Black', sans-serif; }
+  .cta-section h2 span { color: #22C55E; }
+  .cta-section p { color: #aaa; font-size: 1rem; margin-bottom: 2rem; }
+  .cta-btn { display: inline-block; background: #22C55E; color: #111; padding: 0.9rem 2.25rem; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: all 0.2s; }
+  .cta-btn:hover { background: #16a34a; color: #fff; }
+
+  footer { border-top: 1px solid #f0f0f0; padding: 1.75rem 2rem; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 1040px; margin: 0 auto; }
+  .footer-logo { display: flex; align-items: center; gap: 10px; }
+  .footer-icon { width: 32px; height: 32px; background: #111; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
+  .footer-name { font-size: 0.85rem; font-weight: 700; color: #111; }
+  .footer-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .footer-links a { font-size: 0.8rem; color: #999; transition: color 0.2s; }
+  .footer-links a:hover { color: #22C55E; }
+  footer p { font-size: 0.8rem; color: #999; }
+
+  @media (max-width: 700px) { nav { padding: 1rem; } .nav-links { display: none; } .footer-inner { justify-content: center; text-align: center; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-icon">T</div>
+    <div class="logo-text">
+      <span class="logo-name">TITAN</span>
+      <span class="logo-sub">Marketing Agency</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="mailto:luke@titanadgrouphq.com">Contact</a>
+  </div>
+  <a href="mailto:luke@titanadgrouphq.com" class="nav-cta">Get a Free Audit</a>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">About Us</div>
+  <h1>Google Ads Management <span>Built for Local Businesses</span></h1>
+  <p>Titan Marketing Agency was founded by a local business owner who got tired of watching ad budgets disappear with nothing to show for it.</p>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Local Service Business Focus</div></div>
+  <div class="stat"><div class="stat-num">$0</div><div class="stat-label">Wasted on Setup Fees</div></div>
+  <div class="stat"><div class="stat-num">1</div><div class="stat-label">Point of Contact Always</div></div>
+  <div class="stat"><div class="stat-num">Real</div><div class="stat-label">Leads. Not Just Clicks.</div></div>
+</div>
+
+<section class="section">
+  <div class="section-label">Our Story</div>
+  <h2>Started From the Field, Not a Boardroom</h2>
+  <p>Titan Marketing Agency is based in Reisterstown, MD and founded by Luke Clahar — someone who owns and operates a local service business. That means we've personally experienced what it's like to run Google Ads with no clear results, pay an agency that doesn't explain anything, and wonder why the phone isn't ringing despite spending hundreds a month.</p>
+  <p>That firsthand experience is what drives everything we do. We built Titan Marketing to be the agency we wished we had — one that focuses on results you can actually measure: calls, leads, and booked jobs.</p>
+  <p>We work exclusively with local service businesses — towing companies, contractors, plumbers, HVAC providers, and similar trades. That focus means we understand your customers, your competition, and the keywords that actually convert in your market.</p>
+
+  <div class="highlight-box">
+    <p>"If it's not getting you calls, it's not working. That's the only metric that matters." — Luke Clahar, Founder</p>
+  </div>
+</section>
+
+<section class="section" style="background: #f9f9f9; max-width: 100%; padding: 4rem 2rem;">
+  <div style="max-width: 1040px; margin: 0 auto;">
+    <div class="section-label">What We Stand For</div>
+    <h2>Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h3>Transparency First</h3>
+        <p>You'll always know exactly where your money is going and what results it's producing. No black-box reporting, no runaround.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h3>Results Over Vanity</h3>
+        <p>Clicks and impressions don't pay your bills. We optimize for calls, form fills, and booked jobs — the metrics that actually matter.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h3>Local Expertise</h3>
+        <p>We only work with local service businesses. That specialization means better strategy, faster setup, and stronger results for your market.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">04</div>
+        <h3>No Long-Term Lock-In</h3>
+        <p>Month-to-month agreements only. You stay because the work is delivering — not because you're trapped in a contract.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-label">What We Do</div>
+  <h2>Services We Offer</h2>
+  <p>We provide Google Ads management, Google Business Profile optimization, conversion-focused website design, and performance reporting — all tailored for local service businesses.</p>
+  <p>Our typical client spends between $500–$2,000/month on ad spend and pays a flat monthly management fee. You own your ad account, your data, and your campaigns — always.</p>
+  <p>We operate under Titan Marketing Agency, based at 1121 Berrymans Ln, Reisterstown, MD 21136. Reach us at <a href="mailto:luke@titanadgrouphq.com" style="color:#22C55E;font-weight:700;">luke@titanadgrouphq.com</a>.</p>
+</section>
+
+<section class="section">
+  <div class="cta-section">
+    <h2>Ready to Work With <span>Someone Who Gets It?</span></h2>
+    <p>Let's audit your current Google Ads setup for free and show you exactly where you're leaving money on the table.</p>
+    <a href="mailto:luke@titanadgrouphq.com" class="cta-btn">Request a Free Audit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-icon">T</div>
+      <span class="footer-name">Titan Marketing Agency</span>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="mailto:luke@titanadgrouphq.com">Contact</a>
+    </div>
+    <p>&copy; 2026 Titan Marketing Agency. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
