@@ -3,137 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Learn about Titan Marketing Agency — a Google Ads management agency for local service businesses based in Owings Mills, MD. Founded by Luke Clahar.">
 <title>About | Titan Marketing Agency</title>
+<meta name="description" content="Learn about Titan Marketing Agency — a Google Ads management agency for local service businesses based in Owings Mills, MD. Founded by Luke Clahar.">
 <link rel="canonical" href="https://titanadgrouphq.com/about.html">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Arial', sans-serif; color: #111; background: #fff; }
-  a { color: inherit; text-decoration: none; }
-
-  nav {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 1.25rem 2rem; border-bottom: 1px solid #f0f0f0;
-    position: sticky; top: 0; background: #fff; z-index: 100;
-  }
-  .logo { display: flex; align-items: center; gap: 12px; }
-  .logo-icon { width: 40px; height: 40px; background: #111; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
-  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-  .logo-name { font-size: 1rem; font-weight: 900; color: #111; font-family: 'Arial Black', sans-serif; letter-spacing: -0.3px; }
-  .logo-sub { font-size: 0.65rem; font-weight: 700; color: #22C55E; letter-spacing: 2px; text-transform: uppercase; }
-  .nav-links { display: flex; align-items: center; gap: 1.5rem; }
-  .nav-links a { font-size: 0.875rem; font-weight: 600; color: #555; transition: color 0.2s; }
-  .nav-links a:hover { color: #111; }
-  .nav-cta { background: #111; color: #fff; padding: 0.55rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 700; transition: background 0.2s; border: 2px solid #111; }
-  .nav-cta:hover { background: #22C55E; border-color: #22C55E; color: #111; }
-
-  .page-hero { max-width: 800px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
-  .section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; color: #22C55E; text-transform: uppercase; margin-bottom: 0.6rem; }
-  .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -1px; color: #111; margin-bottom: 1.25rem; font-family: 'Arial Black', sans-serif; }
-  .page-hero h1 span { color: #22C55E; }
-  .page-hero p { font-size: 1.1rem; color: #555; line-height: 1.75; max-width: 580px; margin: 0 auto; }
-
-  .section { padding: 4rem 2rem; max-width: 1040px; margin: 0 auto; }
-  .section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: #111; letter-spacing: -0.5px; margin-bottom: 1rem; font-family: 'Arial Black', sans-serif; }
-  .section p { font-size: 0.975rem; color: #555; line-height: 1.8; margin-bottom: 1rem; max-width: 720px; }
-
-  .stats-bar { background: #111; padding: 2rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
-  .stat { text-align: center; }
-  .stat-num { font-size: 1.75rem; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
-  .stat-label { font-size: 0.8rem; color: #aaa; margin-top: 0.25rem; }
-
-  .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
-  .value-card { border: 1.5px solid #e8e8e8; border-radius: 12px; padding: 1.5rem; transition: border-color 0.2s; }
-  .value-card:hover { border-color: #22C55E; }
-  .value-num { font-size: 2rem; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; margin-bottom: 0.5rem; }
-  .value-card h3 { font-size: 0.95rem; font-weight: 700; color: #111; margin-bottom: 0.4rem; }
-  .value-card p { font-size: 0.875rem; color: #666; line-height: 1.6; margin: 0; }
-
-  .highlight-box { background: #f8f8f8; border-left: 3px solid #22C55E; padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
-  .highlight-box p { font-size: 1rem; color: #333; font-weight: 600; line-height: 1.6; margin: 0; }
-
-  .cta-section { background: #111; border-radius: 16px; padding: 4rem 2rem; text-align: center; max-width: 1040px; margin: 0 auto 5rem; }
-  .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: #fff; margin-bottom: 0.75rem; font-family: 'Arial Black', sans-serif; }
-  .cta-section h2 span { color: #22C55E; }
-  .cta-section p { color: #aaa; font-size: 1rem; margin-bottom: 2rem; }
-  .cta-btn { display: inline-block; background: #22C55E; color: #111; padding: 0.9rem 2.25rem; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: all 0.2s; }
-  .cta-btn:hover { background: #16a34a; color: #fff; }
-
-  footer { border-top: 1px solid #f0f0f0; padding: 1.75rem 2rem; }
-  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 1040px; margin: 0 auto; }
-  .footer-logo { display: flex; align-items: center; gap: 10px; }
-  .footer-icon { width: 32px; height: 32px; background: #111; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: #22C55E; font-family: 'Arial Black', sans-serif; }
-  .footer-name { font-size: 0.85rem; font-weight: 700; color: #111; }
-  .footer-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-  .footer-links a { font-size: 0.8rem; color: #999; transition: color 0.2s; }
-  .footer-links a:hover { color: #22C55E; }
-  footer p { font-size: 0.8rem; color: #999; }
-
-  @media (max-width: 700px) { nav { padding: 1rem; } .nav-links { display: none; } .footer-inner { justify-content: center; text-align: center; } }
-</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | Titan Marketing Agency">
+<meta property="og:description" content="Founded by a local service business owner, for local service business owners.">
+<meta property="og:url" content="https://titanadgrouphq.com/about.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='4' fill='%230b0d0f'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='20' font-weight='800' fill='%2339ff14' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">
-    <div class="logo-icon">T</div>
-    <div class="logo-text">
-      <span class="logo-name">TITAN</span>
-      <span class="logo-sub">Marketing Agency</span>
-    </div>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">T</div>
+      <div class="logo-text">
+        <span class="logo-name">TITAN</span>
+        <span class="logo-sub">Marketing Agency</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#proof">Case Study</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a href="audit.html" class="btn btn-accent">Get a Free Audit</a>
   </div>
-  <div class="nav-links">
-    <a href="about.html">About</a>
-    <a href="mailto:luke@titanadgrouphq.com">Contact</a>
-  </div>
-  <a href="mailto:luke@titanadgrouphq.com" class="nav-cta">Get a Free Audit</a>
-</nav>
+</header>
 
-<div class="page-hero">
-  <div class="section-label">About Us</div>
-  <h1>Google Ads Management <span>Built for Local Businesses</span></h1>
-  <p>Titan Marketing Agency was founded by a local business owner who got tired of watching ad budgets disappear with nothing to show for it.</p>
-</div>
-
-<div class="stats-bar">
-  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Local Service Business Focus</div></div>
-  <div class="stat"><div class="stat-num">$0</div><div class="stat-label">Wasted on Setup Fees</div></div>
-  <div class="stat"><div class="stat-num">1</div><div class="stat-label">Point of Contact Always</div></div>
-  <div class="stat"><div class="stat-num">Real</div><div class="stat-label">Leads. Not Just Clicks.</div></div>
-</div>
-
-<section class="section">
-  <div class="section-label">Our Story</div>
-  <h2>Started From the Field, Not a Boardroom</h2>
-  <p>Titan Marketing Agency is based in Owings Mills, MD and founded by Luke Clahar — someone who owns and operates a local service business. That means we've personally experienced what it's like to run Google Ads with no clear results, pay an agency that doesn't explain anything, and wonder why the phone isn't ringing despite spending hundreds a month.</p>
-  <p>That firsthand experience is what drives everything we do. We built Titan Marketing to be the agency we wished we had — one that focuses on results you can actually measure: calls, leads, and booked jobs.</p>
-  <p>We work exclusively with local service businesses — towing companies, contractors, plumbers, HVAC providers, and similar trades. That focus means we understand your customers, your competition, and the keywords that actually convert in your market.</p>
-  <div class="highlight-box">
-    <p>"If it's not getting you calls, it's not working. That's the only metric that matters." — Luke Clahar, Founder</p>
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal">About Us</div>
+    <h1 class="reveal">Google Ads Management Built for Local Businesses</h1>
+    <p class="section-sub reveal">Titan Marketing Agency was founded by a local business owner who got tired of watching ad budgets disappear with nothing to show for it.</p>
   </div>
 </section>
 
-<section class="section" style="background: #f9f9f9; max-width: 100%; padding: 4rem 2rem;">
-  <div style="max-width: 1040px; margin: 0 auto;">
-    <div class="section-label">What We Stand For</div>
-    <h2>Our Core Values</h2>
-    <div class="values-grid">
-      <div class="value-card">
+<div class="container">
+  <div class="image-banner reveal">
+    <img src="data:image/jpeg;base64,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" alt="Google Ads performance dashboard on a laptop at night" loading="lazy">
+  </div>
+</div>
+
+<div class="trust-bar">
+  <div class="container trust-grid">
+    <div class="trust-item reveal"><div class="num">100%</div><div class="label">Local Service Focus</div></div>
+    <div class="trust-item reveal"><div class="num">$0</div><div class="label">Wasted on Setup Fees</div></div>
+    <div class="trust-item reveal"><div class="num">1</div><div class="label">Point of Contact Always</div></div>
+    <div class="trust-item reveal"><div class="num">Real</div><div class="label">Leads, Not Just Clicks</div></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="max-width: 760px;">
+    <div class="eyebrow reveal">Our Story</div>
+    <h2 class="section-title reveal">Started From the Field, Not a Boardroom</h2>
+    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem;">Titan Marketing Agency is based in Owings Mills, MD and founded by Luke Clahar — someone who owns and operates a local service business. That means we've personally experienced what it's like to run Google Ads with no clear results, pay an agency that doesn't explain anything, and wonder why the phone isn't ringing despite spending hundreds a month.</p>
+    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem;">That firsthand experience is what drives everything we do. We built Titan Marketing to be the agency we wished we had — one that focuses on results you can actually measure: calls, leads, and booked jobs.</p>
+    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem;">We work exclusively with local service businesses — towing companies, contractors, plumbers, HVAC providers, and similar trades. That focus means we understand your customers, your competition, and the keywords that actually convert in your market.</p>
+    <div class="highlight-box">
+      <p>"If it's not getting you calls, it's not working. That's the only metric that matters." — Luke Clahar, Founder</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="eyebrow reveal">What We Stand For</div>
+    <h2 class="section-title reveal">Our Core Values</h2>
+    <div class="value-grid">
+      <div class="value-card reveal">
         <div class="value-num">01</div>
         <h3>Transparency First</h3>
         <p>You'll always know exactly where your money is going and what results it's producing. No black-box reporting, no runaround.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card reveal">
         <div class="value-num">02</div>
         <h3>Results Over Vanity</h3>
         <p>Clicks and impressions don't pay your bills. We optimize for calls, form fills, and booked jobs — the metrics that actually matter.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card reveal">
         <div class="value-num">03</div>
         <h3>Local Expertise</h3>
         <p>We only work with local service businesses. That specialization means better strategy, faster setup, and stronger results for your market.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card reveal">
         <div class="value-num">04</div>
         <h3>No Long-Term Lock-In</h3>
         <p>Month-to-month agreements only. You stay because the work is delivering — not because you're trapped in a contract.</p>
@@ -143,36 +102,66 @@
 </section>
 
 <section class="section">
-  <div class="section-label">What We Do</div>
-  <h2>Services We Offer</h2>
-  <p>We provide Google Ads management, Google Business Profile optimization, conversion-focused website design, and performance reporting — all tailored for local service businesses.</p>
-  <p>Our typical client spends between $500–$2,000/month on ad spend and pays a flat monthly management fee. You own your ad account, your data, and your campaigns — always.</p>
-  <p>We operate under Titan Marketing Agency, based in Owings Mills, MD 21117. Reach us at <a href="mailto:luke@titanadgrouphq.com" style="color:#22C55E;font-weight:700;">luke@titanadgrouphq.com</a>.</p>
+  <div class="container" style="max-width: 760px;">
+    <div class="eyebrow">What We Do</div>
+    <h2 class="section-title">Services We Offer</h2>
+    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem;">We provide Google Ads management, Google Business Profile optimization, conversion-focused website design, and performance reporting — all tailored for local service businesses.</p>
+    <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem;">Our typical client spends between $500–$2,000/month on ad spend and pays a flat monthly management fee. You own your ad account, your data, and your campaigns — always.</p>
+    <p style="color: var(--text-dim); line-height: 1.8;">Titan Marketing Agency is located at 75 Meriam Ct, Owings Mills, MD 21117. Reach us at <a href="mailto:luke@titanadgrouphq.com" style="color: var(--accent); font-weight: 700;">luke@titanadgrouphq.com</a>.</p>
+  </div>
 </section>
 
 <section class="section">
-  <div class="cta-section">
-    <h2>Ready to Work With <span>Someone Who Gets It?</span></h2>
-    <p>Let's audit your current Google Ads setup for free and show you exactly where you're leaving money on the table.</p>
-    <a href="mailto:luke@titanadgrouphq.com" class="cta-btn">Request a Free Audit</a>
+  <div class="container">
+    <div class="cta-block reveal">
+      <h2>Ready to Work With Someone Who Gets It?</h2>
+      <p>Let's audit your current Google Ads setup for free and show you exactly where you're leaving money on the table.</p>
+      <a href="audit.html" class="btn btn-accent btn-lg">Request a Free Audit</a>
+    </div>
   </div>
 </section>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <div class="footer-icon">T</div>
-      <span class="footer-name">Titan Marketing Agency</span>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">T</div>
+          <div class="logo-text">
+            <span class="logo-name">TITAN</span>
+            <span class="logo-sub">Marketing Agency</span>
+          </div>
+        </div>
+        <p>Google Ads management built exclusively for local service businesses. No long-term contracts, no vanity metrics — just calls.</p>
+        <div class="footer-address">
+          Titan Marketing Agency<br>
+          75 Meriam Ct, Owings Mills, MD 21117<br>
+          <a href="mailto:luke@titanadgrouphq.com">luke@titanadgrouphq.com</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="audit.html">Free Audit</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="mailto:luke@titanadgrouphq.com">Contact</a>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Titan Marketing Agency. All rights reserved.</span>
+      <span>Reisterstown &amp; Owings Mills, MD</span>
     </div>
-    <p>&copy; 2026 Titan Marketing Agency. All rights reserved.</p>
   </div>
 </footer>
 
+<div class="mobile-cta-bar">
+  <a href="audit.html" class="btn btn-accent btn-block">Get Your Free Google Ads Audit</a>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
